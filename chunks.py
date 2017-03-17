@@ -3,7 +3,7 @@ from itertools import islice, chain
 
 def chunks(iterable: iter, n: int) -> iter:
     '''
-    Generator that yields successive n-sized chunks from iterable.
+    Generator that yields successive n-sized chunks from an iterable.
     Each yilded chunk is a generator of size=chunk_size ().
     That means you have to empty (iterate over) current chunk in order to get the right result
     Last chunk will be sized as is and will not be padded with any value.
