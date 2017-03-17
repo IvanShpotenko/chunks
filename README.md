@@ -5,8 +5,8 @@ That means you have to empty (iterate over) current chunk in order to get the ri
 Last chunk will be sized as is and will not be padded with any value.       
 
 ```python
-for item in chunks(range(25), n=7):
-    print(list(item))
+for chunk in chunks(range(25), n=7):
+    print(list(chunk))
 ```
 
 ```
